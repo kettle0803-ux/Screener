@@ -1,0 +1,46 @@
+name: daily-screener
+
+on:
+  schedule:
+    # ë§¤ì¼ í•œêµ­ì‹œê°„ ì˜¤ì „ 8ì‹œ (UTC 23:00 ì „ì¼)
+    - cron: "0 23 * * *"
+  workflow_dispatch:        # ìˆ˜ë™ ì‹¤í–‰ ë²„íŠ¼
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install deps
+        run: pip install requests pandas finance-datareader
+
+      - name: Run screener
+        env:
+          DART_API_KEY: ${{ secrets.DART_API_KEY }}
+          OUTPUT_DIR: docs
+          HEADLESS: "1"
+        run: python dart_screener_v8.py
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+
+  deploy:
+    needs: run
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

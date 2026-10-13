@@ -25,7 +25,7 @@ def load(src):
     cache[src]=im; return im
 rng=random.Random(7)
 for s in shots:
-    o=s["opt"]; card=s["src"].split("/")[-1].startswith("card_")
+    o=s["opt"]; card=s["src"].split("/")[-1].startswith(("card_","q_","t_","c_"))
     z=o.get("zoom",[1.0,1.04] if card else rng.choice([[1.0,1.12],[1.12,1.0],[1.04,1.10]]))
     p=o.get("pan",[[0.5,0.5],[0.5,0.5]] if card else [[rng.uniform(.3,.7),rng.uniform(.35,.65)],[rng.uniform(.3,.7),rng.uniform(.35,.65)]])
     s["z"],s["p"]=z,p

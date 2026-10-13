@@ -1,0 +1,10 @@
+{
+"opening":[[0,"img/op1.jpg"],[1,"img/op2.jpg"],[2,"img/op3.jpg"],[3,"cards/ill_playground_kids.png"],[4,"cards/q_play.png"],[5,"img/op5.jpg"]],
+"korea":[[0,"img/op1.jpg",{"zoom":[1.12,1.0]}],[1,"cards/card_apt.png"],[4,"cards/card_kospi.png"],[5,"img/k2.jpg"],[6,"cards/card_jobs.png"],[7,"img/op3.jpg",{"zoom":[1.0,1.15]}],[9,"img/op2.jpg",{"zoom":[1.15,1.02]}]],
+"world":[[1,"cards/t_meme.png"],[4,"cards/t_ai.png"],[5,"cards/t_common.png"],[8,"cards/t_late.png"],[10,"cards/ill_playground_dusk.png"]],
+"history":[[0,"cards/c_southsea.png"],[5,"cards/q_newton.png"],[8,"cards/t_tokyo.png"],[12,"cards/c_three.png"],[15,"img/op5.jpg",{"zoom":[1.0,1.12]}]],
+"play":[[0,"cards/ill_playground_kids.png",{"zoom":[1.12,1.0]}],[2,"cards/ill_circle.png"],[6,"cards/ill_leaves_sand.png"],[7,"cards/t_harari.png"],[9,"cards/q_play.png"],[11,"cards/t_simul.png"],[14,"cards/card_apt.png"],[15,"cards/t_two.png"]],
+"different":[[0,"cards/c_three.png"],[1,"cards/t_1.png"],[4,"cards/t_2.png"],[7,"cards/t_3.png"],[8,"cards/ill_playground_dusk.png",{"zoom":[1.0,1.12]}]],
+"sisyphus":[[0,"cards/ill_sisyphus_up.png"],[4,"cards/q_camus.png"],[6,"cards/ill_sisyphus_down.png"]],
+"closing":[[0,"cards/ill_playground_kids.png"],[2,"cards/ill_playground_dusk.png",{"zoom":[1.0,1.08]}],[6,"cards/t_end.png"],[7,"cards/ill_playground_dusk.png",{"zoom":[1.08,1.2]}]]
+}

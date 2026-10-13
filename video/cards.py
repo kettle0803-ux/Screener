@@ -30,7 +30,7 @@ d.polygon(P+[(x1,y1),(x0,y1)],fill=(60,40,34)); d.line(P,fill=ACC,width=8)
 d.ellipse([P[-1][0]-14,P[-1][1]-14,P[-1][0]+14,P[-1][1]+14],fill=ACC)
 txt(d,(x1,P[-1][1]-40),"누적 +17% 이상",sans(60,700),ACC,"rb")
 txt(d,(x0,y1+30),"지난해 2월",sans(40),MUTE); txt(d,(x1,y1+30),"86주째",sans(40),MUTE,"ra")
-txt(d,(260,1020),"통계 작성 이래 최장 연속 상승  ·  그래프는 추세를 나타낸 예시입니다",sans(34),MUTE)
+txt(d,(1950,200),"통계 작성 이래 최장 · 곡선은 추세 예시",sans(34),MUTE,"ra")
 im.save(f"{OUT}/card_apt.png")
 # 2) KOSPI
 im,d=base()
